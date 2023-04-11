@@ -32,6 +32,7 @@ int ff_sws_alphablendaway(SwsContext *c, const uint8_t *src[],
     unsigned off    = 1<<(desc->comp[0].depth - 1);
     unsigned shift  = desc->comp[0].depth;
     unsigned max    = (1<<shift) - 1;
+  
     int target_table[2][3];
 
     for (plane = 0; plane < plane_count; plane++) {
